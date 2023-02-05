@@ -241,7 +241,11 @@ label.panel-label:hover {
 		word-break: keep-all;
 	}
 	.bu_Banner img{
-		max-width: 480px;
+		max-width: 405px;
+	}
+	.bu_Banner .btn_left,
+	.bu_Banner .btn_right{
+    	width: 15px;
 	}
 	.bu_Banner iframe{
 		max-width: 480px;
@@ -278,10 +282,6 @@ label.panel-label:hover {
 	.bu_Banner iframe{
 		max-width: 400px;
 		height: 225px;
-	}
-	.bu_Banner .btn_left,
-	.bu_Banner .btn_right{
-    	width: 25px;
 	}
 }
 @media all and (max-width: 600px){
