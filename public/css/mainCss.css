@@ -385,6 +385,9 @@
   .space02_body dd {
     letter-spacing: -1px;
   }
+  .text01{
+	font-size: 16px;
+  }
 }
 @media (max-width: 500px) {
   .space01_body, .slideshow_container, .slideshow_container li {
