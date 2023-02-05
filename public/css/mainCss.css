@@ -308,6 +308,7 @@
     border: none;
     font-size: 40px;
     padding: 0;
+	  letter-spacing: 0;
   }
 	.space01_text br{
 		display: block;
