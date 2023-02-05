@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link type="text/css" rel="stylesheet" href="../../css/educationCss.css" />
+<link type="text/css" rel="stylesheet" href="../../css/common.css" />
+<script src="../../js/jquery-3.6.0.min.js"></script>
+<script src="../../js/includeHeader.js"></script>	
+<script src="../../js/includeHTML.js"></script>
+<title>EDDI &gt; EDUCATION &gt; 에디로봇아카데미</title>
+</head>
+<body id="subBody">
+	<div id="subWrap">
+		<div class="subSection">
+			<header include-html="../../html/common/header.html"></header>
+			<div class="subBg educationBg">
+				<dl>
+					<dt>EDUCATION</dt>
+					<dd>ELECTRONIC DESIGN DEVELOPMENT INSTITUTE</dd><!--다 같음-->
+				</dl>
+				<div class="ed_banner">
+					<ul>
+						<li class="mySlides fade"></li>
+						<li class="mySlides fade"></li>
+						<li class="mySlides fade"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="subContent">
+				<div class="navBody" include-html="../../html/EDUCATION/educationNav.html"></div>
+				<article>
+					<h1>에디로봇아카데미</h1>
+					<div class="ed_main_text01">
+						<h2><img src="../../image/icon_01.png" class="left_icon01">꿈을 키우고, 만들고 싶은것을 만들수 있는 능력을 길러주는 교육이 시작됩니다.<img src="../../image/icon_01.png" class="right_icon01"></h2>
+						<div class="ed_main_text01_list">
+							<ul>
+								<li>
+									입시가 아닌,<br/> 
+									<strong>실무와 창업을 위한 교육</strong>
+								</li>
+								<li>
+									8명 구성, <strong>소수 정예 그룹 교육</strong><br/>
+									<span>(단, 학년이 아닌 수준별)</span>
+								</li>
+								<li>
+									수학과 프로그래밍<br/>
+									AI 알고리즘<br/>
+									디자인 설계
+								</li>
+								<li><strong>하브루타 수업 방식</strong></li>
+							</ul>
+						</div>
+					</div>
+					<div class="ed_main_text02">
+						<ul>
+							<li>
+								<button type="button" onClick="location.href='sub_edLakia.html'">
+									<dl>
+										<dt><!--라키아--></dt>
+										<dd>프리미엄 초등 STEAM-로봇 CLUB</dd>
+									</dl>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='sub_edAstra.html'">
+									<dl>
+										<dt><!--아스트라--></dt>
+										<dd>프리미엄 중고등 STEAM-로봇 CLUB</dd>
+									</dl>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='sub_edEmbedded_body.html'">
+									<dl>
+										<dt>임베디드 마스터</dt>
+										<dd>프리미엄 성인 임베디드 CLUB</dd>
+									</dl>
+								</button>
+							</li>
+							<li>
+								<button type="button" onClick="location.href='sub_edEmployee.html'">
+									<dl>
+										<dt>재직자 과정</dt>
+										<dd>재직자 단기 과정</dd>
+									</dl>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</div>	
+		<footer class="footer" include-html="../../html/common/footer.html"></footer>
+	</div>
+</body>
+<script>
+	includeHTML();
+</script>
+</html>
+<script>
+	var slideIndex = 0;
+	showSlides();
+	//banner
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		for (i = 0; i < slides.length; i++) {
+		   slides[i].style.display = "none";  
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}    
+		slides[slideIndex-1].style.display = "block";  
+		setTimeout(showSlides, 4000); 
+	}
+</script>

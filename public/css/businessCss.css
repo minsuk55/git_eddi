@@ -1,0 +1,358 @@
+@charset "utf-8";
+/* CSS Document */
+
+.subBg.businessBg{
+	background-image:url("../image/business/p_business_banner.png");
+}
+
+/*탭*/
+.bu_plan_tab{
+	margin-top: 28px;
+}
+.bu_plan_tab input[type="radio"] {
+	display: none
+}
+label.panel-label {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	background-color: #fff;
+	-webkit-transition-property: background-color, color;
+	transition-property: background-color, color;
+	-webkit-transition-duration: 200ms;
+	transition-duration: 200ms;
+	border-bottom: 1px solid rgba(33,30,30,0.5);
+}
+label.panel-label:hover {
+	font-family: "NanumSquareEB";
+}
+.tabBody{
+	background-color: #fff
+}
+.tabBody .tab_container {
+	width: 100%;
+}
+.tabBody label.panel-label {
+	padding: 12px 24px;
+}
+.tabBody main {
+	max-height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 600ms;
+	transition: opacity 600ms;
+	overflow-y: hidden;
+}
+.tab01:checked ~ .tabBody .tabContent01 main,
+.tab02:checked ~ .tabBody .tabContent02 main{
+	max-height: initial;
+	opacity: 1;
+	padding: 50px 0;
+}
+
+.tab01:checked ~ .tabs_list .li_panel01,
+.tab02:checked ~ .tabs_list .li_panel02{
+	pointer-events: none;
+	cursor: default;
+	-webkit-transform: translate3d(0, 1px, 0);
+	transform: translate3d(0, 1px, 0);
+	font-family: "NanumSquareEB";
+}
+
+.tab01:checked ~ .tabs_list .li_panel01 label.panel-label,
+.tab02:checked ~ .tabs_list .li_panel02 label.panel-label{
+	background-color: #fff;
+	padding-top: 23px;
+}
+.tab01:checked ~ .tabs_list .li_panel01 label.panel-label::after,
+.tab02:checked ~ .tabs_list .li_panel02 label.panel-label::after{
+	height: 6px
+}
+
+.tabs_list {
+	display: flex;
+	list-style: none;
+	text-align: center;
+	border-top: 1px solid rgba(33,30,30,0.5);
+	margin: 0;
+	padding: 0;
+}
+.tabs_list li {
+	text-align: center;
+	font-size: 30px;
+	width: 50%;
+	position: relative;
+}
+.tabs_list li:hover {
+	-webkit-transition: none;
+	transition: none;
+}
+.tabs_list li label.panel-label {
+	position: relative;
+	padding: 23px 0;
+	font-size: 30px;
+}
+
+/*** 수동배너 ***/
+.bu_Banner{
+	width: 100%;
+	height: 616px;
+	text-align: center;
+	position: relative;
+}
+.bu_Banner .mySlides {
+	display:none;
+}
+.bu_Banner img{
+	width:100%;
+	max-width: 850px;
+}
+.bu_Banner iframe{
+	width:100%;
+	max-width: 850px;
+	height: 478px;
+}
+.bu_Banner p{
+	width: 100%;
+	margin-top: 25px;
+	color: rgba(21, 22, 22, 0.5);
+	font-size: 18px;
+	font-family: "NanumSquareB";
+	word-break: keep-all;
+}
+.bu_Banner .btn_left{
+	width: 43px;
+	height: 100%;
+	background-image: url("../image/p_education_btn_img_prev.png");
+	background-repeat: no-repeat;
+	background-position: center left;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.bu_Banner .btn_right {
+	width: 43px;
+	height: 100%;
+	background-image: url("../image/p_education_btn_img_next.png");
+	background-repeat: no-repeat;
+	background-position: center right;
+	position: absolute;
+	top:0px;
+	right: 0px;
+}
+.bu_Banner .icon_left{
+	width: 35px;
+	height: 30px;
+	position: absolute;
+    left: 0px;
+    top: -17px;
+}
+.bu_Banner .icon_right{
+	width: 35px;
+	height: 30px;
+	transform: rotate(180deg);
+    position: absolute;
+    right: 0px;
+    top: -17px;
+}
+
+
+
+.tabs_list li label.panel-label::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: #2a7cbf;
+	height: 0;
+	-webkit-transition-property: height;
+	transition-property: height;
+	-webkit-transition-duration: 200ms;
+	transition-duration: 200ms;
+}
+.tabs_list li label.panel-label:hover {
+	padding-top: 24px;
+}
+.tabs_list li label.panel-label:hover::after {
+	height: 6px;
+}
+
+.bu_Banner h4{
+	color: #211e1e;
+	font-size: 28px;
+	font-family: "NanumSquareEB";
+	letter-spacing: -0.75px;
+	margin-bottom: 26px;
+}
+.bu_Banner p{
+	margin-top: 32px;
+	color: #211e1e;
+	font-size: 18px;
+	line-height: 1.67;
+  	letter-spacing: -0.45px;
+}
+
+
+@media all and (max-width: 1000px){
+	.tabs_list li label.panel-label {
+		font-size: 26px;
+	}
+	
+	.bu_Banner {
+    	height: 452px;
+	}
+	.bu_Banner h4{
+		font-size: 22px;
+	}
+	.bu_Banner img{
+		max-width: 680px;
+	}
+	.bu_Banner iframe{
+		max-width: 680px;
+		height: 382px;
+	}
+	.bu_Banner .icon_left,
+	.bu_Banner .icon_right{
+		width: 30px;
+		height: 25px;
+	}
+	.bu_Banner .btn_left,
+	.bu_Banner .btn_right{
+    	width: 33px;
+	}
+}
+@media all and (max-width: 900px){
+	.tabs_list li label.panel-label {
+		font-size: 24px;
+		padding: 20px 0;
+	}
+	.bu_Banner {
+    	height: 390px;
+	}
+	.bu_Banner h4{
+		height: 52px;
+		padding: 0 20px;
+		line-height: 1.3;
+		font-size: 20px;
+		word-break: keep-all;
+	}
+	.bu_Banner img{
+		max-width: 480px;
+	}
+	.bu_Banner iframe{
+		max-width: 480px;
+		height: 269px;
+	}
+	.bu_Banner .icon_left,
+	.bu_Banner .icon_right{
+		width: 25px;
+		height: 20px;
+	}
+}
+
+@media all and (max-width: 700px){
+	.tabs_list li label.panel-label {
+		padding: 16px 0;
+	}
+	.tab01:checked ~ .tabs_list .li_panel01 label.panel-label,
+	.tab02:checked ~ .tabs_list .li_panel02 label.panel-label {
+		padding-top: 15px;
+	}
+	
+	.bu_Banner {
+    	height: 385px;
+	}
+	.bu_Banner h4{
+		padding: 0 25px;
+	}
+	.bu_Banner p{
+		font-size: 16px;
+	}
+	.bu_Banner img{
+		max-width: 400px;
+	}
+	.bu_Banner iframe{
+		max-width: 400px;
+		height: 225px;
+	}
+	.bu_Banner .btn_left,
+	.bu_Banner .btn_right{
+    	width: 25px;
+	}
+}
+@media all and (max-width: 600px){
+	.subContent article.bu_A_body{
+		width: 100%;
+		padding: 25px 20px;
+	}
+	.subContent article.bu_A_body h1{
+		font-size: 26px;
+	}
+	.tabs_list li label.panel-label {
+		font-size: 18px;
+	}
+	.bu_Banner {
+    	height: 360px;
+	}
+	.bu_Banner img{
+		max-width: 350px;
+	}
+	.bu_Banner iframe{
+		max-width: 350px;
+		height: 197px;
+	}
+	.bu_Banner p{
+		word-break: keep-all;
+	}
+	
+}
+@media all and (max-width: 450px){
+	.subContent article.bu_A_body h1{
+		font-size: 24px;
+	}
+	.bu_Banner {
+    	height: 300px;
+	}
+	.bu_Banner h4{
+		padding: 0 10px;
+		font-size: 18px;
+	}
+	.bu_Banner img{
+		max-width: 260px;
+	}
+	.bu_Banner iframe{
+		max-width: 260px;
+		height: 147px;
+	}
+	.bu_Banner p {
+		font-size: 14px;
+		margin-top: 25px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

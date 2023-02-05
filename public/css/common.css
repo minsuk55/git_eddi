@@ -1,0 +1,514 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: "NanumSquareB";
+  src: url("../font/NanumSquareB.otf");
+  src: url("../font/NanumSquareB.otf") format("OpenType"),
+    url("../font/NanumSquareB.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NanumSquareEB";
+  src: url("../font/NanumSquareEB.otf");
+  src: url("../font/NanumSquareEB.otf") format("OpenType"),
+    url("../font/NanumSquareEB.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NanumSquareR";
+  src: url("../font/NanumSquareR.otf");
+  src: url("../font/NanumSquareR.otf") format("OpenType"),
+    url("../font/NanumSquareR.ttf") format("truetype");
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+html {
+  height: auto;
+  overflow-x: hidden;
+  font-family: "NanumSquareR", sans-serif;
+}
+article,aside,details,figcaption,footer,header,hgroup,menu,nav,sextion {
+  display: block;
+}
+article {
+  width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0 auto;
+  font-weight: normal;
+}
+nav,ul,li {
+  list-style: none;
+}
+dl,dt,dd {
+  margin: 0 auto;
+  padding: 0;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  text-decoration: none;
+  vertical-align: baseline;
+  background-color: transparent;
+}
+a:hover,a:active,a:focus,a:visited,a:link {
+  color: #000;
+}
+textarea::placeholder {
+  color: #bbb;
+}
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  vertical-align: top;
+}
+input::placeholder {
+  color: #bbb;
+}
+input:focus,select:focus,textarea:focus {
+  outline: none;
+}
+select {
+  line-height: initial;
+  cursor: pointer;
+  border: none;
+}
+select::-ms-expand {
+  display: none;
+}
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+img {
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 상단 gnb */
+header {
+	width: 100%;
+	height: 93px;
+	background-color: #f4f1ee;
+	position: relative;
+}
+header h1{
+	position: absolute;
+	left: 136px;
+	top: 15px;
+}
+header h1 a{
+	width: 153px;
+	height: 61px;
+	display: block;
+	background-image: url("../image/p_logo.png");
+	background-repeat: no-repeat;
+}
+header .navPc{
+	position: absolute;
+	right: 90px;
+	z-index: 10;
+}
+header .navPc ul {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+header .navPc ul::after {
+	display: block;
+	clear: both;
+	content: '';
+}
+header .navPc li{
+	position: relative;
+	float: left;
+}
+header .navPc ul li a{
+	display: block;
+	padding: 37px 37px 30px;
+	color: #211e1e;
+	font-size: 18px;
+	font-family: "NanumSquareEB";
+	border-bottom: 6px solid transparent;
+}
+header .navPc ul li a:hover{
+	color: #2a7cc0;
+	border-bottom: 6px solid #2a7cc0;
+}
+
+header .navPc ul .sudNav {
+	position: absolute;
+	top: calc(100% - 1px);
+	left: 0;
+	width: 310px;
+	display: none;
+	background-color: rgba(255,255,255,0.80);
+	z-index: 20;
+}
+header .navPc ul .sudNav li {
+	float: none;
+}
+header .navPc ul .sudNav li a {
+	padding: 14px 0 14px 33px;
+	border-bottom: none;
+}
+header .navPc ul li:hover > .sudNav {
+	display: block;
+}
+
+
+.openBtn,
+.navMobile{
+	display: none;
+}
+.navMobile .sidenav {
+	height: 100%;
+	width: calc(100% - 200px);
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	overflow-x: hidden;
+	transition: 0.5s;
+	margin-left: 0;
+	color: #211e1e;
+}
+.navMobile .sidenav li{
+	float: none;
+	width: 100%;
+	border-bottom: 1px solid #f4f1ee;
+}
+.navMobile .sidenav a {
+	padding: 24px 36px;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: "NanumSquareEB";
+	display: block;
+	transition: 0.3s;
+	
+}
+.navMobile .sidenav a:hover {
+	background-color: #f4f1ee;
+}
+.navMobile .sidenav .clickBut{
+	background-image: url("../image/icon01.png");
+	background-position: calc(100% - 40px) center;
+	background-repeat: no-repeat;
+}
+.navMobile .m_sudNav{
+    overflow: hidden;
+    transition: max-height 0.7s;
+    max-height: 0;
+}
+.navMobile .m_sudNav li{
+	background-color: #fff;
+}
+.navMobile .m_sudNav li:first-child{
+	border-top: 1px solid #f4f1ee;
+}
+.navMobile .m_sudNav li:last-child{
+	border-bottom:none;
+}
+.navMobile .m_sudNav a{
+	color: rgba(33, 30, 30, 0.8) !important;
+	padding: 24px 36px 24px 55px !important;
+	font-size: 22px !important;
+}
+.navMobile .m_sudNav a:after{
+    content: '';
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.navMobile .m_sudNav a:hover{
+	transition: all 0.3s;
+}
+.nav{
+    overflow: hidden;
+}
+.nav:target .m_sudNav{
+	max-height: 100%;
+}
+
+.navMobile .closebtn {
+	color: #fff;
+	font-weight: 100;
+	font-size: 35px;
+	position: absolute;
+	top: 10px;
+	right: 140px;
+}
+.openBtn{
+	position: absolute;
+	font-size: 58px;
+	right: 30px;
+	top:5px
+}
+#dimmed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*** 서브페이지 공통 ***/
+#subBody{
+	width: 100%;
+	height: 100%;
+	background-color: #f9f9f9;
+}
+#subWrap{
+	position: relative;
+	min-height: 100vh;
+}
+.subSection{
+	padding-bottom: 225px;
+}
+.subBg{
+	width: 100%;
+	max-width: 2560px;
+	height: 486px;
+	margin-bottom: 106px;
+	color: #fff;
+	text-align: center;
+	padding-top: 192px;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.subBg dt{
+	font-size: 72px;
+	font-family: "NanumSquareEB";
+	margin-bottom: 38px;
+}
+.subBg dd{
+	font-size: 24px;
+	font-family: "NanumSquareB";
+}
+
+
+/*서브 좌측 네비*/
+.subContent .navBody{
+	width: 275px;
+	padding-top: 34px;
+	border-top: 3px solid #211e1e;
+	position: absolute;
+	left: 0;
+}
+.subContent .navBody li{
+	margin-bottom: 30px;
+	color: #211e1e;
+	font-size: 18px;
+}
+.subContent .navBody li a:hover,
+.subContent .navBody li a:focus,
+.subContent .navBody li a:active{
+	font-family: "NanumSquareEB";
+}
+
+.subContent{
+	width: 100%;
+	max-width: 1485px;
+	position: relative;
+}
+.subContent article{
+	width: 1160px;
+	padding: 85px;
+	margin-left: 317px;
+	margin-bottom: 47px;
+	background-color: #fff;
+	color: #211e1e;
+}
+.subContent article h1{
+	font-size: 36px;
+	font-family: "NanumSquareEB";
+}
+
+.subContent article h2{
+	width: calc(100% - 86px);
+	padding: 0 17px 0 10px;
+	text-align: center;
+	line-height: 1.3;
+	font-size: 24px;
+	font-family: "NanumSquareEB";
+	word-break: keep-all;
+	position: relative;
+}
+.subContent article h2 strong{
+	color: #236cb4;
+}
+.subContent article h2 .left_icon01{
+	position: absolute;
+	left: -30px;
+	top: -17px;
+}
+.subContent article h2 .right_icon01{
+	transform: rotate(180deg);
+	position: absolute;
+	right: -30px;
+	top: -17px;
+}
+
+/*하단*/
+footer{
+	width: 100%;
+	height: 225px;
+	padding-top: 59px;
+	padding-right: 125px;
+	background-color: #eeeeee;
+	background-image: url("../image/p_main_26.png");
+	background-position: 128px center;
+	background-repeat: no-repeat;
+	color: #211e1e;
+	font-size: 14px;
+	text-align: right;
+	line-height: 1.71;
+}
+footer p{
+	margin-top: 20px;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+}
+
+@media (max-width:1500px){
+	.subContent .navBody{display: none;}
+	.subContent article{
+		margin: 0 auto;
+	}
+}
+@media (max-width: 1340px){
+	.navPc{
+		display: none;
+	}
+	button.openBtn{
+		display: block !important;
+	}
+	header h1{
+		left: 39px;
+	}
+	.subBg{
+		height: 428px;
+		margin-bottom:55px;
+		padding-top: 183px;
+		background-size: cover;
+	}
+	.subBg dt{
+		font-size:58px;
+		margin-bottom: 29px;
+	}
+	.subBg dd{
+		font-size: 19px;
+	}
+	
+	.ed_banner li{
+		height: 428px;
+	}
+	
+	footer {
+    	padding-right: 40px;
+		background-position: 40px center;
+	}
+	
+	
+}
+@media (max-width: 1159px){
+	.subBg{
+		margin-bottom: 0;
+	}
+	.subContent article{
+		width: 100%;
+		padding: 55px 64px;
+	}
+}
+@media (max-width: 720px){
+	.subContent article h1{
+		font-size: 28px;
+	}
+	footer{
+		font-size: 13px;
+		text-align: left;
+		line-height: 1.5;
+		padding-left: 30px;
+		padding-top: 100px;
+		background-size: 130px auto;
+		background-position: 23px 30px;
+	}
+	footer p {
+		margin-top: 15px;
+	}
+}
+@media (max-width: 500px){
+	header{
+		height: 70px;
+	}
+	header h1 {
+		top: 10px;
+		left: 30px;
+	}
+	header h1 a{
+		width: 120px;
+		background-size: 120px auto;
+	}
+	.navMobile .sidenav {
+		width: calc(100% - 110px);
+	}
+	.navMobile .closebtn {
+		font-size: 27px;
+		right: 62px;
+	}
+	.navMobile .sidenav a {
+		padding: 20px 30px;
+		font-size: 20px;
+	}
+	.navMobile .m_sudNav a {
+		font-size: 18px !important;
+		padding: 20px 30px 20px 45px !important;
+	}
+	.openBtn {
+		font-size: 40px;
+	}
+	
+	.subBg {
+		height: 450px;
+		padding-top: 170px;
+	}
+	.subBg dt{
+		font-size: 45px;
+		margin-bottom: 15px
+	}
+	.subBg dd{
+		font-size: 18px;
+		word-break: keep-all;
+		padding: 0 30px;
+		line-height: 1.3;
+	}
+	.ed_banner li{
+		height: 450px;
+	}
+	.subContent article {
+		padding: 25px 20px;
+	}
+	.subContent article h2{
+		width: calc(100% - 66px);
+		font-size: 18px;
+		padding: 0 10px;
+	}
+}
+
