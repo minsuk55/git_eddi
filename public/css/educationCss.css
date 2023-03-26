@@ -1192,16 +1192,22 @@ label.panel-label:hover {
 		width: 85px;
 	}
 	/*라키아*/
+	.ed_la_text01 li dd{
+		display: none;
+	}
 	.ed_la_text01.subLa_text01 li:nth-child(2){
-		top: 30px;
+		/*top: 30px;*/
+		top: 55px;
 	}
 	.ed_la_text01.subLa_text01 li:nth-child(3){
-		top: 140px;
+		/*top: 140px;*/
 		left: 150px;
 		width: 90px;
+		top: 148px;
 	}
 	.ed_la_text01.subLa_text01 li:nth-child(4){
-		top: 57px;
+		/*top: 57px;*/
+		top: 88px;
 		right: 17px;
 		width: 160px;
 		font-size: 11px;
@@ -1246,6 +1252,7 @@ label.panel-label:hover {
 		right: 16px;
 		letter-spacing: -0.7px;
 	}
+	
 	.ed_ManualBanner {
 		height: 263px;
 	}
@@ -1497,19 +1504,20 @@ label.panel-label:hover {
 	
 	/*라키아*/
 	.ed_la_text01.subLa_text01 li:nth-child(2){
-		top: 20px;
+		top: 35px;
 	}
 	.ed_la_text01.subLa_text01 li:nth-child(3){
-		top: 100px;
+		top: 105px;
 		left: 95px;
 		width: 80px;
 	}
 	.ed_la_text01.subLa_text01 li:nth-child(4){
-		top: 20px;
+		top: 53px;
 		right: -10px;
 		width: 150px;
-		font-size: 11px;
+		font-size: 10px;
 		line-height: 1.3;
+		color: #000;
 	}
 	.ed_la_text01.subLa_text01 li:nth-child(4) strong{
 		font-size: 16px;
@@ -1526,9 +1534,6 @@ label.panel-label:hover {
 		width: 74px;
 		font-size: 10px;
 	}
-	.ed_la_text01 li strong {
-		font-size: 12px;
-	}
 	.ed_la_text01 li:nth-child(1) {
 		top: 50px;
 		left: 2px;
@@ -1538,21 +1543,18 @@ label.panel-label:hover {
 		top: 15px;
 		left: 80px;
 		line-height: 1.1;
-		color: #000;
 	}
 	.ed_la_text01 li:nth-child(3) {
 		width: 110px;
 		top: 95px;
 		left: 80px;
 		line-height: 1.1;
-		color: #000;
 	}
 	.ed_la_text01 li:nth-child(4) {
 		width: 160px;
 		top: 35px;
 		right: -16px;
 		letter-spacing: -1px;
-		color: #000;
 	}
 	.ed_la_text01 li:nth-child(4) strong {
 		font-size: 16px;
