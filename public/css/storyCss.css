@@ -1068,7 +1068,7 @@ label.panel-label:hover {
 		height: 59px;
 	}
 	.tabs_list li label.panel-label {
-		font-size: 20px;
+		font-size: 16px;
 		padding: 15px 0;
 	}
 	.tabs_list li label.panel-label::after {
@@ -1242,7 +1242,7 @@ label.panel-label:hover {
 	}
 	.themeBut_h03 dd {
 		margin-top: 15px;
-		font-size: 21px;
+		font-size: 16px;
 	}
 }
 @media (max-width: 600px){
@@ -1263,7 +1263,7 @@ label.panel-label:hover {
 		border-radius: 50px;
 		height: 50px;
     	padding-top: 13px;
-		font-size:26px;
+		font-size: 16px;
 	}
 	.story_intro_text02 dd {
 		display: inline-block;
@@ -1277,7 +1277,7 @@ label.panel-label:hover {
 		width:80%;
 	}
 	.story_intro_text02 .dd_text01{
-		font-size: 22px;
+		font-size: 16px;
 		padding-left: 10px;
 	}
 	.story_intro_text02 .dd_text02{
@@ -1372,7 +1372,7 @@ label.panel-label:hover {
 		font-size: 19px;
 	}
 	.history_content01 dd {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	.history_content01 .text16 {
 		height: 356px;
@@ -1438,7 +1438,7 @@ label.panel-label:hover {
 		width: 208px;
 	}
 	.history_content01 .text21 dt span{
-		font-size: 17px;
+		font-size: 16px;
 	}
 	.history_content01 .text21_img img {
 		width: 185px;
@@ -1498,7 +1498,7 @@ label.panel-label:hover {
 	}
 	.themeBut_h03 dd {
 		margin-top: 10px;
-		font-size: 18px;
+		font-size: 16px;
 	}
 }
 @media (max-width: 500px){
@@ -1506,7 +1506,7 @@ label.panel-label:hover {
 		margin-top: 40px;
 	}
 	.subContent article .story_history h2 {
-		font-size: 19px;
+		font-size: 16px;
 		letter-spacing: -1px;
 	}
 	.subContent article h2 .left_icon01,
@@ -1592,11 +1592,11 @@ label.panel-label:hover {
 		background-size: 190px auto;
 	}
 	.themeBut dd {
-		font-size: 15px;
+		font-size: 16px;
 	}
 	#demosH02 .owl-carousel .item dd, 
 	#demosH03 .owl-carousel .item dd{
-		font-size: 20px;
+		font-size: 16px;
 	}
 	
 	#demosH03 .content03_theme {
@@ -1625,7 +1625,7 @@ label.panel-label:hover {
 	}
 	.themeBut_h03 dd {
 		margin-top: 10px;
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.mRight-0{
 		margin-right: 0 !important;
@@ -1634,7 +1634,7 @@ label.panel-label:hover {
 }
 @media (max-width: 440px){
 	.subContent article .story_history h2 {
-		font-size: 17px;
+		font-size: 16px;
 	}
 	.story_intro_text01 .text01{
 		font-size: 16px;
@@ -1646,7 +1646,7 @@ label.panel-label:hover {
 		font-size:24px;
 	}
 	.story_intro_text02 .dd_text02{
-		font-size:13px;
+		font-size: 16px;
 		letter-spacing: -1.4px;
 	}
 	
@@ -1671,7 +1671,7 @@ label.panel-label:hover {
 		width: 320px;
 	}
 	.tabs_list li label.panel-label {
-		font-size: 15px;
+		font-size: 16px;
 	}
 	.history_content01 .text16 dl::after,
 	.history_content01 .text18 dl::after,
@@ -1791,7 +1791,7 @@ label.panel-label:hover {
 	}
 	#demosH02 .owl-carousel .item dd, 
 	#demosH03 .owl-carousel .item dd{
-		font-size: 18px;
+		font-size: 16px;
 		margin-top: 15px;
 	}
 	
@@ -1820,7 +1820,7 @@ label.panel-label:hover {
 	}
 	.themeBut_h03 dd {
 		margin-top: 8px;
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
 
