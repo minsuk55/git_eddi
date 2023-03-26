@@ -394,11 +394,13 @@
 .ed_Table dd{
 	padding: 10px 18px;
 	border-bottom: 3px solid #fff;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: -0.8px;
 }
-
+.ed_Table .lak_text{
+	color: #f0f0f0;
+}
 
 /*** 임베디드 마스터 과정 ***/
 .ed_eb_text01{
@@ -835,9 +837,6 @@ label.panel-label:hover {
 	.ed_Table .table_title01{
 		width: 130px;
 	}
-	.ed_Table dd {
-		font-size: 13px;
-	}
 	.ed_Table .blank01 {
 		word-break: keep-all;
 	}
@@ -1196,17 +1195,14 @@ label.panel-label:hover {
 		display: none;
 	}
 	.ed_la_text01.subLa_text01 li:nth-child(2){
-		/*top: 30px;*/
 		top: 55px;
 	}
 	.ed_la_text01.subLa_text01 li:nth-child(3){
-		/*top: 140px;*/
 		left: 150px;
 		width: 90px;
 		top: 148px;
 	}
 	.ed_la_text01.subLa_text01 li:nth-child(4){
-		/*top: 57px;*/
 		top: 88px;
 		right: 17px;
 		width: 160px;
@@ -1295,7 +1291,7 @@ label.panel-label:hover {
 		width: 122px;
 	}
 	.ed_Table li {
-		width: 167px;
+		width: 165px;
 	}
 	.ed_Table dt {
 		padding: 13px 20px 11px;
@@ -1305,7 +1301,7 @@ label.panel-label:hover {
     	padding: 6px 18px;
 	}
 	.ed_Table .blank01 {
-		height: 264px;
+		height: 315px;
 	}
 	
 	.ed_em_text01 {
@@ -1591,13 +1587,11 @@ label.panel-label:hover {
 		width: 112px;
 	}
 	.ed_Table dt {
-		padding: 10px 15px 9px;
-		font-size: 14px;
 		border-bottom: 1px solid #fff;
 	}
 	.ed_Table dd {
-		font-size: 10px;
 		padding: 6px;
+		word-break: keep-all;
 	}
 	.ed_Table .table_title01, 
 	.ed_Table .table_title02 {
@@ -1606,8 +1600,11 @@ label.panel-label:hover {
 	.ed_Table {
 		width: 320px;
 	}
+	.ed_Table dd {
+		font-size: 15px;
+	}
 	.ed_Table .blank01 {
-		height: 200px;
+		height: 320px;
 	}
 	.ed_Table .blank02 {
 		height: 52px;
