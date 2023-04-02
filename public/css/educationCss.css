@@ -378,7 +378,7 @@
 	display: none;
 }
 .ed_Table .blank01{
-	height: 277px;
+	height: 318px;
 }
 .ed_Table .blank02{
 	height: 80px;
@@ -832,7 +832,7 @@ label.panel-label:hover {
 		background-size: 230px 70px;
 	}
 	.ed_Table li {
-		width: 168px;
+		width: 165px;
 	}
 	.ed_Table .table_title01{
 		width: 130px;
@@ -1190,6 +1190,20 @@ label.panel-label:hover {
 	.subContent article.ed_A_body h1 img {
 		width: 85px;
 	}
+	.ed_la_text01.ed_as_text01 li:nth-child(2) {
+		top: 48px;
+		left: 146px;
+	}
+	.ed_la_text01.ed_as_text01 li:nth-child(3) {
+		top: 150px;
+		left: 146px;
+	}
+	.ed_la_text01.ed_as_text01 li:nth-child(4) {
+		width: 160px;
+		top: 90px;
+		right: 16px;
+	}	
+	
 	/*라키아*/
 	.ed_la_text01 li dd{
 		display: none;
@@ -1488,6 +1502,7 @@ label.panel-label:hover {
 	}
 	.ed_main_text02 li dl dd {
 		font-size: 14px;
+		word-break: keep-all;
 	}
 	
 	.subContent article.ed_A_body h1 {
@@ -1497,6 +1512,22 @@ label.panel-label:hover {
 	.subContent article.ed_A_body h1 img {
 		width: 70px;
 	}
+	.ed_la_text01.ed_as_text01 li:nth-child(1){
+		top: 38px;
+	}
+	.ed_la_text01.ed_as_text01 li:nth-child(2) {
+		top: 30px;
+		left: 78px;
+	}
+	.ed_la_text01.ed_as_text01 li:nth-child(3) {
+		top: 103px;
+		left: 78px;
+	}
+	.ed_la_text01.ed_as_text01 li:nth-child(4) {
+		width: 160px;
+		top: 63px;
+		right: -15px;
+	}	
 	
 	/*라키아*/
 	.ed_la_text01.subLa_text01 li:nth-child(2){
@@ -1601,15 +1632,18 @@ label.panel-label:hover {
 		width: 320px;
 	}
 	.ed_Table dd {
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.ed_Table .blank01 {
 		height: 320px;
 	}
 	.ed_Table .blank02 {
-		height: 52px;
+		height: 95px;
 	}
 	
+	.ed_Table.asTable .blank01 {
+		height: 240px;
+	}	
 	/*임베디드 마스터 과정*/
 	.tabBody main{
 		overflow-x: hidden;
