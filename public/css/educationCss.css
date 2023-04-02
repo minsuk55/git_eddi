@@ -476,35 +476,71 @@
 	vertical-align: middle;
 }
 
-.tabContent01 .tab01_text01{
+.tabContent01 .tab01_text01,
+.tabContent03 .tab01_text01,
+.tabContent04 .tab01_text01,
+.tabContent05 .tab01_text01,
+.tabContent06 .tab01_text01,
+.tabContent07 .tab01_text01,
+.tabContent08 .tab01_text01{
 	width: 100%;
 	margin-top: 27px;
 	margin-bottom: 60px;
 	padding: 23px;
 	background-color: rgba(249,249,249,0.8);
 }
-.tabContent01 .tab01_text01 li{
+.tabContent01 .tab01_text01 li,
+.tabContent03 .tab01_text01 li,
+.tabContent04 .tab01_text01 li,
+.tabContent05 .tab01_text01 li,
+.tabContent06 .tab01_text01 li,
+.tabContent07 .tab01_text01 li,
+.tabContent08 .tab01_text01 li{
 	margin-bottom: 15px;
 	list-style: inside disc;
 	font-size: 18px;
 	font-family: "NanumSquareB";
 }
-.tabContent01 .tab01_text01 li:last-child{
+.tabContent01 .tab01_text01 li:last-child,
+.tabContent03 .tab01_text01 li:last-child,
+.tabContent04 .tab01_text01 li:last-child,
+.tabContent05 .tab01_text01 li:last-child,
+.tabContent06 .tab01_text01 li:last-child,
+.tabContent07 .tab01_text01 li:last-child,
+.tabContent08 .tab01_text01 li:last-child{
 	margin-bottom: 0;
 }
 .tabContent01 .tab01_text02,
-.tabContent02 .tab02_text02{ 
+.tabContent02 .tab02_text02,
+.tabContent03 .tab01_text02,
+.tabContent04 .tab01_text02,
+.tabContent05 .tab01_text02,
+.tabContent06 .tab01_text02,
+.tabContent07 .tab01_text02,
+.tabContent08 .tab01_text02{ 
 	margin-left: -20px;
 	display: flex;
 	margin: auto;
 }
 .tabContent01 .tab01_text02 ul,
-.tabContent02 .tab02_text02 ul{ 
+.tabContent02 .tab02_text02 ul,
+.tabContent03 .tab01_text02 ul,
+.tabContent04 .tab01_text02 ul,
+.tabContent05 .tab01_text02 ul,
+.tabContent06 .tab01_text02 ul,
+.tabContent07 .tab01_text02 ul,
+.tabContent08 .tab01_text02 ul{ 
 	height: 87px;
 	position: absolute;
 }
 .tabContent01 .tab01_text02 li,
-.tabContent02 .tab02_text02 li{
+.tabContent02 .tab02_text02 li,
+.tabContent03 .tab01_text02 li,
+.tabContent04 .tab01_text02 li,
+.tabContent05 .tab01_text02 li,
+.tabContent06 .tab01_text02 li,
+.tabContent07 .tab01_text02 li,
+.tabContent08 .tab01_text02 li{
 	float: left;
 	width: 214px;
 	height: 88px;
@@ -522,17 +558,35 @@
 	display: table;
 }
 .tabContent01 .tab01_text02 li p,
-.tabContent02 .tab02_text02 li p{
+.tabContent02 .tab02_text02 li p,
+.tabContent03 .tab01_text02 li p,
+.tabContent04 .tab01_text02 li p,
+.tabContent05 .tab01_text02 li p,
+.tabContent06 .tab01_text02 li p,
+.tabContent07 .tab01_text02 li p,
+.tabContent08 .tab01_text02 li p{
 	display: table-cell;
 	vertical-align: middle;
 }
 .tabContent01 .tab01_text02 li:nth-child(2n-1),
-.tabContent02 .tab02_text02 li:nth-child(2n-1){
+.tabContent02 .tab02_text02 li:nth-child(2n-1),
+.tabContent03 .tab01_text02 li:nth-child(2n-1),
+.tabContent04 .tab01_text02 li:nth-child(2n-1),
+.tabContent05 .tab01_text02 li:nth-child(2n-1),
+.tabContent06 .tab01_text02 li:nth-child(2n-1),
+.tabContent07 .tab01_text02 li:nth-child(2n-1),
+.tabContent08 .tab01_text02 li:nth-child(2n-1){
 	background-image: url("../image/img_one_blue.png");
 	position: relative;
 }
 .tabContent01 .tab01_text02 li:nth-child(2n+2),
-.tabContent02 .tab02_text02 li:nth-child(2n+2){
+.tabContent02 .tab02_text02 li:nth-child(2n+2),
+.tabContent03 .tab01_text02 li:nth-child(2n+2),
+.tabContent04 .tab01_text02 li:nth-child(2n+2),
+.tabContent05 .tab01_text02 li:nth-child(2n+2),
+.tabContent06 .tab01_text02 li:nth-child(2n+2),
+.tabContent07 .tab01_text02 li:nth-child(2n+2),
+.tabContent08 .tab01_text02 li:nth-child(2n+2){
 	background-image: url("../image/img_one_gray.png");
 }
 
@@ -865,7 +919,13 @@ label.panel-label:hover {
 		background-size: 149px 65px;
 	}
 	.tabContent01 .tab01_text02 li:first-child,
-	.tabContent02 .tab02_text02 li:first-child{
+	.tabContent02 .tab02_text02 li:first-child,
+	.tabContent03 .tab01_text02 li:first-child,
+	.tabContent04 .tab01_text02 li:first-child,
+	.tabContent05 .tab01_text02 li:first-child,
+	.tabContent06 .tab01_text02 li:first-child,
+	.tabContent07 .tab01_text02 li:first-child,
+	.tabContent08 .tab01_text02 li:first-child{
 		margin-left: 0;
 	}
 	
@@ -1099,20 +1159,38 @@ label.panel-label:hover {
 	.tabContent01 .tab01_text01{
 		padding: 15px;
 	}
-	.tabContent01 .tab01_text01 li {
+	.tabContent01 .tab01_text01 li,
+	.tabContent03 .tab01_text01 li,
+	.tabContent04 .tab01_text01 li,
+	.tabContent05 .tab01_text01 li,
+	.tabContent06 .tab01_text01 li,
+	.tabContent07 .tab01_text01 li,
+	.tabContent08 .tab01_text01 li{
 		font-size: 16px;
 		text-indent: -20px;
 		padding-left: 15px;
 		line-height: 1.3;
 	}
 	.tabContent01 .tab01_text02 ul, 
-	.tabContent02 .tab02_text02 ul {
+	.tabContent02 .tab02_text02 ul,
+	.tabContent03 .tab01_text02 ul,
+	.tabContent04 .tab01_text02 ul,
+	.tabContent05 .tab01_text02 ul,
+	.tabContent06 .tab01_text02 ul,
+	.tabContent07 .tab01_text02 ul,
+	.tabContent08 .tab01_text02 ul{
 		height: 65px;
 		width: max-content;
 		position: inherit;
 	}
 	.tabContent01 .tab01_text02 li,
-	.tabContent02 .tab02_text02 li{
+	.tabContent02 .tab02_text02 li,
+	.tabContent03 .tab01_text02 li,
+	.tabContent04 .tab01_text02 li,
+	.tabContent05 .tab01_text02 li,
+	.tabContent06 .tab01_text02 li,
+	.tabContent07 .tab01_text02 li,
+	.tabContent08 .tab01_text02 li{
 		width: 120px;
 		height: 65px;	
     	margin-left: -30px;
@@ -1386,15 +1464,33 @@ label.panel-label:hover {
 		margin-bottom: 40px;
 	}
 	.tabContent01 .tab01_text02, 
-	.tabContent02 .tab02_text02 {
+	.tabContent02 .tab02_text02,
+	.tabContent03 .tab01_text02,
+	.tabContent04 .tab01_text02,
+	.tabContent05 .tab01_text02,
+	.tabContent06 .tab01_text02,
+	.tabContent07 .tab01_text02,
+	.tabContent08 .tab01_text02{
 		width: 420px;
 	}
 	.tabContent01 .tab01_text02 ul, 
-	.tabContent02 .tab02_text02 ul {
+	.tabContent02 .tab02_text02 ul,
+	.tabContent03 .tab01_text02 ul,
+	.tabContent04 .tab01_text02 ul,
+	.tabContent05 .tab01_text02 ul,
+	.tabContent06 .tab01_text02 ul,
+	.tabContent07 .tab01_text02 ul,
+	.tabContent08 .tab01_text02 ul{
 		height: 140px;
 	}
 	.tabContent01 .tab01_text02 li,
-	.tabContent02 .tab02_text02 li{
+	.tabContent02 .tab02_text02 li,
+	.tabContent03 .tab01_text02 li,
+	.tabContent04 .tab01_text02 li,
+	.tabContent05 .tab01_text02 li,
+	.tabContent06 .tab01_text02 li,
+	.tabContent07 .tab01_text02 li,
+	.tabContent08 .tab01_text02 li{
 		width: 160px;
 		height: 65px;	
     	margin-left: -30px;
@@ -1403,7 +1499,13 @@ label.panel-label:hover {
 		background-size: 160px 65px;
 	}
 	.tabContent01 .tab01_text02 li:nth-child(4),
-	.tabContent02 .tab02_text02 li:nth-child(4){
+	.tabContent02 .tab02_text02 li:nth-child(4),
+	.tabContent03 .tab01_text02 li:nth-child(4),
+	.tabContent04 .tab01_text02 li:nth-child(4),
+	.tabContent05 .tab01_text02 li:nth-child(4),
+	.tabContent06 .tab01_text02 li:nth-child(4),
+	.tabContent07 .tab01_text02 li:nth-child(4),
+	.tabContent08 .tab01_text02 li:nth-child(4){
 		margin-left: 0;
 	}
 	.tabBody .tab_table {
